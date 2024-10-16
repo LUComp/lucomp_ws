@@ -1,1 +1,1 @@
-# lulcomps-ws
+# Official LUComp's website 
