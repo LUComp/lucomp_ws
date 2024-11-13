@@ -1,21 +1,30 @@
-// JavaScript to cycle through featured projects
-const projects = document.querySelectorAll('.featured-project');
-let currentProject = 0;
-const displayTime = 5000; // Display each project for 5 seconds
+const buttonHome = document.getElementById('buttonHome');
+const buttonAbout = document.getElementById('buttonAbout');
+const buttonProjects = document.getElementById('buttonProjects');
+const buttonJoin = document.getElementById('buttonJoin');
+const buttonEuipments = document.getElementById('buttonEquipments');
 
-function cycleProjects() {
-    // Remove 'active' class from current project
-    projects[currentProject].classList.remove('active');
-    
-    // Move to the next project
-    currentProject = (currentProject + 1) % projects.length;
-    
-    // Add 'active' class to the new current project
-    projects[currentProject].classList.add('active');
-}
 
-// Initialize the first project as active
-projects[currentProject].classList.add('active');
+buttonHome.addEventListener('click', () => {
+    window.location.href = '2.html';
+});
 
-// Cycle projects every X seconds
-setInterval(cycleProjects, displayTime);
+
+buttonAbout.addEventListener('click', () => {
+    window.location.href = 'about.html';
+});
+
+
+buttonProjects.addEventListener('click', () => {
+    window.location.href = 'projects.html';
+});
+
+
+buttonJoin.addEventListener('click', () => {
+    window.location.href = 'join.html';
+});
+
+
+buttonEuipments.addEventListener('click', () => {
+    window.location.href = 'equipments.html';
+});
