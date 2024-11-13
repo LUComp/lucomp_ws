@@ -6,9 +6,8 @@ const buttonEuipments = document.getElementById('buttonEquipments');
 
 
 buttonHome.addEventListener('click', () => {
-    window.location.href = '2.html';
+    window.location.href = 'home.html';
 });
-
 
 buttonAbout.addEventListener('click', () => {
     window.location.href = 'about.html';
