@@ -1,0 +1,81 @@
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color:#bb141e;
+    padding: 0px;
+}
+.navbar li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 15px;
+    padding: 0 80px 0;
+    left: -30px;
+    position: relative;
+}
+.navbar li::after {
+    content: '';
+    background: white;
+    width: 0%;
+    height: 2px;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    transition: 0.5s;
+    transform: translateX(50%);
+}
+.navbar li:hover::after{
+    width: 50%;
+}
+.navbar li.index::after, .navbar li.about::after, .navbar li.projects::after, .navbar li.join::after, .navbar li.equipment::after {
+    content: '';
+    background: white;
+    width: 0%;
+    height: 2px;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 50%;
+    transform: translateX(50%);
+}
+.navbar li + li::before {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 24px; 
+    background-color: white;
+    position: absolute;
+    left: -15px; 
+    top: 50%;
+    transform: translateY(-50%);
+}
+.navbar li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 0;
+    position: relative;
+    font-weight: 500;
+    font-size: 1.25em;
+}
+.contactUs ul {
+    right: 0;
+    top: 20px;
+    position: absolute;
+}
+.contactUs ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0;
+    padding: 0 15px;
+}
+.contactUs ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+}
+.contactUs ul li a .icon {
+    width: 100%;
+    height: 100%;
+}
